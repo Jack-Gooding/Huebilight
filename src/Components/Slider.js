@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import './Module.css';
-
-let newColour = null;
-
+import '../css/sliders.css'
 class Slider extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +9,8 @@ class Slider extends Component {
 
   handleChange(e) {
     const newColor = e.target.value;
-    this.props.onChange(newColor);
+    const colour = this.props.color;
+    this.props.onChange(newColor, colour);
   }
 
 
@@ -20,8 +18,7 @@ class Slider extends Component {
     return (
 
         <div>
-        <input onChange={this.handleChange} type="range" max="255"></input>
-        <h1>{Slider.props}</h1>
+        <input onChange={this.handleChange} type="range" max="255" style={{width: "100%",}} color={this.props.color}></input>
         </div>
 
     );

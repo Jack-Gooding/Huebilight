@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import './Module.css';
-
-let newColour = null;
 
 class Slider extends Component {
   constructor(props) {
