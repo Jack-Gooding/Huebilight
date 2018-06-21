@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../css/Hue_Light.css';
-class Hue_Light extends Component {
+import '../css/Hue_Light_test.css';
+class Hue_Light_test extends Component {
   constructor(props) {
     super(props);
 
@@ -16,19 +16,16 @@ class Hue_Light extends Component {
   render() {
     return (
 
-        <div class="col">
         <div class="hue-light-container">
+        <p class="hue-light-name">{this.props.name}</p>
         <div class="hue-light-color" onClick={this.handleChange} style={{background: this.props.color,}}></div>
         <div class="hue-light-brightness" onClick={this.handleChange} style={{background: this.props.brightness}}></div>
-        <p class="hue-light-name">{this.props.name}</p>
-        </div>
-        <h1>{this.props.index}</h1>
         </div>
 
     );
   }
 };
 
-Hue_Light.defaultProps = { props: "No props defined" };
+Hue_Light_test.defaultProps = { props: "No props defined" };
 
-export default Hue_Light;
+export default Hue_Light_test;

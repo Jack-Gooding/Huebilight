@@ -26,7 +26,7 @@ class Header extends Component {
 
     return (
         <div id="header" style={this.props.style}>
-          <h1>Huebilight</h1>
+          <h1>Philips Hue</h1>
         </div>
     );
   }

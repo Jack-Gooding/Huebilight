@@ -1,23 +1,31 @@
 
+
 input[type=range] {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
   width: 100%; /* Specific width is required for Firefox. */
   background: transparent; /* Otherwise white in Chrome */
   height: 40px;
   margin: 0;
+  transition-duration: 1s;
+
 }
 
 .slider {
   margin: 10px 0;
+  transition-duration: 1s;
 }
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  transform: translateZ(20px)
+  transform: translateZ(20px);
+  transition-duration: 1s;
+
 }
 
 input[type=range]:focus {
   outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  transition-duration: 1s;
+
 }
 
 input[type=range]::-ms-track {
@@ -28,6 +36,8 @@ input[type=range]::-ms-track {
   background: transparent;
   border-color: transparent;
   color: transparent;
+  transition-duration: 1s;
+
 }
 
 /* Special styling for WebKit/Blink */
@@ -41,6 +51,8 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
   transform: translateZ(20px);
+  transition-duration: 1s;
+
 }
 
 
@@ -54,6 +66,8 @@ input[type=range]::-ms-thumb {
   background: #bbbbbb;
   cursor: pointer;
   transform: translateZ(20px);
+  transition-duration: 1s;
+
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -63,10 +77,14 @@ input[type=range]::-webkit-slider-runnable-track {
   //box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background: #3071a9;
   border-radius: 1.3px;
+  transition-duration: 1s;
+
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #367ebd;
+  transition-duration: 1s;
+
 }
 
 input[type=range]::-moz-range-track {
@@ -76,7 +94,8 @@ input[type=range]::-moz-range-track {
   //box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background-color: #bbb;
   border-radius: 4.2px;
-  background:
+  transition-duration: 1s;
+
 }
 
 input[type=range]::-moz-range-thumb {
@@ -88,43 +107,59 @@ input[type=range]::-moz-range-thumb {
   background: #888;
   cursor: pointer;
   transform: translateZ(20px);
+  transition-duration: 1s;
+
 }
 
 input[type=range][color=red]::-moz-range-thumb {
   border: 0px solid #ef5350;
   background: #ef5350;
   transform: translateZ(20px);
+  transition-duration: 1s;
+
 }
 input[type=range][color=green]::-moz-range-thumb {
   border: 0px solid #9ccc65;
   background: #9ccc65;
   transform: translateZ(20px);
+  transition-duration: 1s;
+
 }
 input[type=range][color=blue]::-moz-range-thumb {
   border: 0px solid #42a5f5;
   background: #42a5f5;
   transform: translateZ(20px);
+  transition-duration: 1s;
+
 }
 
 input[type=range][color=red]::-moz-range-progress {
   background-color: #ef5350;
   height: 8.4px;
   border-radius: 4.2px;
+  transition-duration: 1s;
+
 }
 input[type=range][color=green]::-moz-range-progress {
   background-color: #9ccc65;
   height: 8.4px;
   border-radius: 4.2px;
+  transition-duration: 1s;
+
 }
 input[type=range][color=blue]::-moz-range-progress {
   background-color: #42a5f5;
   height: 8.4px;
   border-radius: 4.2px;
+  transition-duration: 1s;
+
 }
-input[type=range].brightnessSlider::-moz-range-progress {
+input[type=range][color=brightness]::-moz-range-progress {
   background-color: #888;
   height: 8.4px;
   border-radius: 4.2px;
+  transition-duration: 1s;
+
 }
 
 input[type=range]::-ms-track {
@@ -135,23 +170,32 @@ input[type=range]::-ms-track {
   border-color: transparent;
   border-width: 16px 0;
   color: transparent;
+  transition-duration: 1s;
+
 }
 input[type=range]::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  transition-duration: 1s;
+
 }
 input[type=range]:focus::-ms-fill-lower {
   background: #3071a9;
+  transition-duration: 1s;
+
 }
 input[type=range]::-ms-fill-upper {
   background: #3071a9;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  transition-duration: 1s;
+
 }
 
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
+  transition-duration: 1s;
 }

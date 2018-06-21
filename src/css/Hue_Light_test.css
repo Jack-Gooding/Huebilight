@@ -1,0 +1,59 @@
+.hue-light-container {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+  background: #797979;
+  overflow: hidden;
+}
+
+.hue-light-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 1em 2em;
+  background: #dcdcdc;
+  border: solid 5px #797979;
+  border-radius: 2em;
+}
+.hue-light-color {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+   height: 30px;
+   width: 30px;
+   margin: 0px 0 0 0;
+   border-radius: 5px 5px 0 0;
+}
+.hue-light-brightness {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+   height: 30px;
+   width: 30px;
+   margin: 0px 0 0 0;
+   border-radius: 5px 5px 0 0;
+}
+
+.hue-light-name::after, .hue-light-name::before {
+  content: "";
+  background: #797979;
+  height: 5px;
+  width: 10000px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hue-light-name::before {
+  right: 100%;
+}
+
+.hue-light-name::after {
+  left: 100%;
+}

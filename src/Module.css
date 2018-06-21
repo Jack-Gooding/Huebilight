@@ -3,11 +3,10 @@
   padding: 15px;
   width: 80%;
   min-height: 2em;
-  background: beige;
+  background: '#111';
   border-radius: 5px;
-  border: solid 1px grey;
+  border: solid 2px black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 h1 {
@@ -31,3 +30,44 @@ input::-webkit-slider-thumb {
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
+
+.default-input {
+  position: relative;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #ccc;
+  margin: 2em auto;
+  cursor: pointer;
+  outline: none;
+}
+
+.default-input:focus {
+  border: 1px solid #0af;
+  cursor: pointer;
+}
+
+.angle-input-pivot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -1px;
+  height: 2px;
+}
+
+.default-input .angle-input-pivot::before {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 10px;
+  margin-top: -6px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.default-input:focus .angle-input-pivot::before {
+border: 1px solid #0af; }

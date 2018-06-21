@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Module from './Module';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+
+
 
 registerServiceWorker();
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 
-ReactDOM.render(<Module />, document.getElementById('module-container'));
+ReactDOM.render(<App />, document.getElementById('app-container'));
